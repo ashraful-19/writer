@@ -118,11 +118,15 @@ p{
 }
 
 
+.service-item i{
+    font-size: 1.5rem;
+}
+
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
     position: relative;
     margin-left: 25px;
-    padding: 35px 0;
+    padding: 25px 0;
     font-size: 15px;
     color: var(--light) !important;
     text-transform: uppercase;
@@ -181,13 +185,12 @@ p{
         top: 0;
         left: 0;
         z-index: 999;
-        background: transparent !important;
     }
     
 
     .sticky-top.navbar-dark {
         position: fixed;
-        background: #4e0097c7!important; 
+        background: #42175B!important; 
         backdrop-filter: blur(5px); 
         -webkit-backdrop-filter: blur(5px);
     }
@@ -214,7 +217,7 @@ p{
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgb(107 0 255 / 85%), rgba(10, 10, 10, 1.7)), url(https://w0.peakpx.com/wallpaper/381/858/HD-wallpaper-memories-pretty-lovely-romantic-romance-vintage-postcard-postcard-beautiful-key-pen-graphy-eiffel-tower-letters-beauty-vintage-letter.jpg) !important;
+    background: linear-gradient(rgb(44 0 105 / 85%), rgba(10, 10, 10, 1.7)), url(https://w0.peakpx.com/wallpaper/381/858/HD-wallpaper-memories-pretty-lovely-romantic-romance-vintage-postcard-postcard-beautiful-key-pen-graphy-eiffel-tower-letters-beauty-vintage-letter.jpg) !important;
     background-position: center center!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
@@ -269,6 +272,80 @@ p{
     display: none;
 }
 
+/* accordion */
+
+.show-btn-container {
+    text-align: center;
+  }
+
+  .show-btn {
+    margin-top: 10px;
+  }
+
+/* accordion */
+
+.accordion-item {
+    border: 1px solid #ccc;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    border-radius: 5px!important;
+    width: 60%;
+  }
+
+  .accordion-header {
+    padding: 10px;
+    background-color: #f1e2ff;
+    cursor: pointer;
+    border-radius: 5px!important;
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .toggle-icon {
+    float: right;
+  }
+  .show-btn-container {
+    text-align: center;
+  }
+  .show-btn {
+    margin-top: 10px;
+    background-color: rgb(65, 5, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.show-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: #43039d;
+    border: 1px solid #43039d ;
+}
+
+
+  .hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .accordion-header {
+      font-size: 18px;
+    }
+    .accordion-item {
+    border: 1px solid #ccc;
+    width: 90%;
+
+  }
+  }
+  
+
 
 /*** Service ***/
 .service-item {
@@ -281,13 +358,13 @@ p{
 }
 
 .s-icon{
-    background-color: #4e0097;
+    background-color: #42175B;
     color: white; 
-    padding: 10px; 
+    padding: 15px; 
     border-radius: 10px;
 }
 .service-item:hover {
-    background: #321051;
+    background: #200e43;
 }
 
 .service-item * {
